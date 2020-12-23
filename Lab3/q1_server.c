@@ -53,6 +53,7 @@ int main()
 	}
 	printf("\nSocket accepting.\n");
 	int pid=fork();
+	printf("\nPID = %d , PPID = %d \n", getpid(), getppid());
 	while(1){
 	if(pid>0){
 		//parent
