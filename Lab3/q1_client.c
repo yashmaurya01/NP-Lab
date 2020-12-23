@@ -38,6 +38,7 @@ int main()
 	printf("\n\n");
 	int pid;
 	pid=fork();
+	printf("\nPID = %d , PPID = %d \n", getpid(), getppid());
 	while(1){
 	if(pid>0)
 	{
